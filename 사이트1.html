@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1번사이트</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; font-family: Montserrat;}
+        li{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        img{vertical-align: top;}
+        html{scroll-behavior: smooth;}
+        .con{height: 100vh; display: flex; align-items: center; justify-content: center;} /* */
+        .con h2{font-size: 30px;}
+        header{background: #19191c; padding: 20px 30px; color: #f9f9f9; display: flex; align-items: center; justify-content: space-between; position: fixed; top: 60px; width: 90%; z-index: 10;
+        left: 50%; transform: translateX(-50%);}
+        header nav ul{display: flex;}
+        header nav ul li{margin-left: 50px; font-weight: bold;}
+        #about{background: url(img/main.png) center/cover; background-attachment: fixed; position: relative; overflow: hidden;}
+        #about h2{font-size: 80px; position: relative; color: #f9f9f9;} 
+        #about h2:before{content: ''; position: absolute; width: 70px; height: 10px; background: #fff; left: 50%; top:20px; transform: translateX(3px); opacity: 0;
+        animation: ani1 0.5s linear 0.3s both; color: #f9f9f9;}
+        #pro1{background: url(img/bg1.png) center/cover; background-attachment: fixed; color: #f9f9f9;}
+        #pro2{background: url(img/bg2.png) center/cover; background-attachment: fixed; color: #f9f9f9;}
+        #pro3{background: url(img/bg3.png) center/cover; background-attachment: fixed; color: #f9f9f9;} 
+        @keyframes ani1 {
+            0%{
+                width: 0px; opacity: 0;
+            }
+            100%{
+                width: 70px; opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1><i class="xi-emoticon-happy-o xi-spin"></i>1번사이트</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About1</a></li>
+                    <li><a href="#pro1">Project1</a></li>
+                    <li><a href="#pro2">Project2</a></li>
+                    <li><a href="#pro3">Project3</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div id="about" class="con">
+            <h2>Hello World</h2>
+        </div>
+        <div id="pro1" class="con">
+            <h2>Project1</h2>
+        </div>
+        <div id="pro2" class="con">
+            <h2>Project2</h2>
+        </div>
+        <div id="pro3" class="con">
+            <h2>Project3</h2>
+        </div>
+    </div>
+</body>
+</html>
